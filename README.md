@@ -3,14 +3,14 @@ The script can be added to crontab for regular backups. The script must be execu
 
 It uses rsync over ssh to create a timemachine like backup.
 
-##Usage##
+## Usage ##
 ```bash
 ./backup.sh joe@example.com:~/projects ~/projects 22 5
 ```
 
 This will backup the projects folder from example.com server to the projects folder in your homefolder on the computer or server where this script is executed.
 
-###parameters###
+### Parameters ###
 ```bash
 ./backup.sh <target folder> <destination folder> <ssh port> <number of backups>
 ```
